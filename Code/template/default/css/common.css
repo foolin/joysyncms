@@ -1,0 +1,231 @@
+/*
+ Author:	Foolin
+ E-mail:	Foolin@126.com
+ Create Date: 2009-5-27
+*/
+
+body{
+	margin:5px;
+	background:#cbe8bb;
+	font-size: 12px;
+}
+
+
+
+a{
+	color:#000;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#F00;
+	padding:1px;
+	text-decoration:underline;
+}
+
+
+#wrapper {
+	margin:0px auto;
+	width:915px;
+}
+
+/*顶部*/
+#header{
+	background:url(../images/top_bg.jpg) no-repeat;
+	height:120px;
+}
+
+.logo{ float:left;width:42%;}
+.banner{float:left;width:58%;}
+
+.site_title{
+	padding:5px;
+	margin-top:25px;
+	margin-left:80px;
+	font-size:26px; 
+	font-family:"微软雅黑", Georgia, "Times New Roman", Times, serif; 
+	font-weight:bold;
+	color:#009b7b;
+}
+
+.site_url{
+	font-size:16px; 
+	font-family:"微软雅黑", Georgia, "Times New Roman", Times, serif; 
+	font-weight:bold;
+	color:#093;
+}
+
+.site_desc{
+	margin-top:30px;
+	line-height:35px;
+	font-size:18px;
+	color:#099;
+	font-family:"微软雅黑", Georgia, "Times New Roman", Times, serif;
+}
+
+.line{ border-bottom:1px #80C57C dashed; margin-right:20px; padding-left:5px; padding-right:5px;}
+
+/*顶部菜单*/
+#menu{
+	background:url(../images/menu_bg.jpg);
+	height:36px;
+}
+#menu ul{
+	list-style:none;
+	padding:0px;
+	margin:0px 5px;
+}
+#menu ul li {
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#menu ul li a{
+	line-height:36px;
+	padding-right:10px;
+	padding-left:10px;
+	display:block;
+	color:#3fb14f;
+	text-decoration:none;
+	letter-spacing:2px;
+	padding-top:1px;
+	margin-right:0px;
+	border-right:1px solid #cbe8bb;
+	border-right:1px solid #C7E4CF;
+}
+#menu ul li a:hover, #menu  ul li a.current{
+	padding-top:2px;
+	line-height:35px;
+	background:url(../images/menu_hover.jpg) repeat;
+}
+
+#menu .on{
+	background:url(../images/menu_hover.jpg) repeat;
+}	
+
+/*主内容区*/
+#main{
+	background:url(../images/main_bg.jpg);
+}
+
+/*主内容区容器*/
+.container{
+	margin:0 auto;
+	width:900px;
+	clear:both;
+}
+
+
+/*页脚*/
+#footer{
+	margin-top:0px;
+	background:url(../images/footer_bg.jpg);
+	height:120px;
+}
+
+/*底部连接导航*/
+#bottomlink{
+	height:30px;
+	line-height:30px;
+	background:#cbe8bb;
+	text-align:center;
+	border-bottom:solid 1px #3fb14f;
+}
+
+/*底部版权信息*/
+#copyright{
+	line-height:150%;
+	text-align:center;
+	padding:10px;
+}
+
+/*内容面板*/
+.pannel{
+	margin:0 auto;
+	width:899px;
+}
+
+/*清除浮动*/
+.clear{
+	clear:both;
+}
+
+/*当前位置*/
+.location {
+	clear:both;
+	line-height:25px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:14px;
+	color:#666;
+}
+
+/*栏目Box*/
+.box{
+	margin:2px 2px 5px 2px;
+	border:2px solid #bfe599;
+	padding:1px;
+}
+
+.box .title{
+	height:25px;
+	background:#cbe8bb url(../images/box_title_bg.jpg);
+	padding:0px 5px;
+	line-height:25px;
+	color:#3fb14f;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.box .title .titletxt{
+	float:left;
+	padding-left:10px;
+}
+
+.box .title .more{
+	float:right;
+	font-size:12px;
+	font-weight:normal;
+}
+
+.box .content{
+	margin:0px;
+	padding:2px;
+	background:#e0efd1;
+	line-height:22px;
+}
+.box .content ul{
+	margin:0px;
+	padding:0px 5px;
+}
+.box .content li{
+	margin:0px;
+	padding:0px;
+	border-bottom:#CCC 1px dashed;
+	list-style:url(../images/dot.jpg) inside;
+}
+/*新闻列表时间样式*/
+.time{
+	color:#999;
+}
+
+.img {
+	margin:3px;
+	background:#F2FBF2;
+	padding:5px;
+	border:#999 1px solid;
+}
+a:hover .img{
+	background:#0C3;
+}
+
+.column_side {
+	float:left;
+	width:250px;
+}
+
+.column_main {
+	float:left;
+	width:650px;
+}

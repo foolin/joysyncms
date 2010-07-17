@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{sys:sitename /}</title>
+<meta name="keywords" content="{sys:keywords /}"/>
+<meta name="description" content="{sys:description /}"/>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/artlist.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.blog {
+	font-family:"微软雅黑", Georgia, "Times New Roman", Times, serif;
+	line-height:25px;
+	font-size:13px;
+}
+.blog dl{
+	margin:10px;
+	border-bottom:2px solid #bfe599;
+	padding:10px;
+}
+.blog dl dt{ font-size:15px; font-weight:bold; padding-bottom:10px;}
+.blog dl dd{ margin:0px;}
+.blog .info, .blog .info a{ color:#999; font-size:12px; margin-top:5px;}
+
+-->
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<!--header start--->
+    {include file="header.html"/}
+    <!--header end--->
+    
+    <!--main start--->
+    <div id="main">
+    	<div class="container">
+        
+        		<!--notice--->
+        		<div class="location">
+                	你现在的位置：{sys:sitepath /}
+                </div>
+                
+                <div class="column_main">
+                		<div class="list">
+                            <div class="list_title">最新博文</div>
+								<div class="blog">
+                                    {list:blog src="art" row="20" col="1"}
+                                        <dl>
+                                            <dt> <a href="[blog:url]">[blog:title]</a></dt>
+                                            <dd>
+                                            	 [blog:content len="300" lenext="..." clearhtml="true"] 
+                                                 [<a href="[blog:url]">阅读全文</a>]
+                                            </dd>
+                                             <dd class="info">类别：<a href="{sys:siteurl /}[blog:colurl]">[blog:colname]</a>    浏览:[blog:hits]   时间：[blog:createtime]</dd>
+                                        </dl>
+                                    {/list:blog}
+                                </div>
+                           <div class="pagebar">{tag:page /}</div>
+                        </div>
+               </div>
+               
+				<div class="column_side">
+                
+                        <!--栏目-->
+                        <div class="box">
+                          <div class="title"><span class="titletxt">栏目导航</span></div>
+                            <div class="content">
+                                <ul>
+                                
+                                    {list:column mode="table" row="10" col="1"  table="ArtColumn" where="ParentID={sys:id /}" order="id"}
+                                        <li><a href="[column:url]" title="[column:name]">[column:name]</a></li>
+                                        
+                                        {if: [column:ParentID] = 0}
+                                            {list:child mode="table" row="10" col="1"  table="ArtColumn" where="ParentID=[column:id]" order="id"}
+                                            <li>|-- <a href="[child:url]" title="">[child:name]</a></li>
+                                            {/list:child} 	
+                                        {/if}
+                                        
+                                    {/list:column}
+                                    
+                                    {if: {sys:id /} <> 0 }
+                                        <li> <== <a href="artlist.asp" title="">返回父栏目</a></li>
+                                    {/if}
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <!--栏目-->
+                        <div class="box">
+                          <div class="title"><span class="titletxt">热门新闻</span><span class="more"><a href="list.html">更多>></a></span></div>
+                            <div class="content">
+                                <ul>
+                                {list:hot  row="20" col="1" order="hot"}
+                                <li><a href="[hot:url]" title="">[hot:title len="15" lenext="..."]</a></li>
+								{/list:hot}
+                                </ul>
+                            </div>
+                        </div>
+                        
+                </div>
+               <div class="clear"></div>
+        </div>
+    </div>
+    <!--main end--->
+    
+    <!--footer start--->
+	{include file="footer.html" /}
+    <!--footer end--->
+</div>
+</body>
+</html>
+<!--- 制作：刘付灵 E-mail:Foolin@126.com --->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

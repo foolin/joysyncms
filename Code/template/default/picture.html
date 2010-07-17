@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{sys:title /} - {sys:sitename /} - Powered by eekku.com</title>
+<meta name="keywords" content="{sys:keywords /}"/>
+<meta name="description" content="{sys:description /}"/>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/article.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+// 图片缩放
+//使用：<img src="images/a.jpg" onload="javascript:DrawImage(this);"/>
+function DrawImage(ImgD,iWidth){ 
+    var image=new Image();
+	if(iWidth<=0 || iWidth==null)
+	{
+		var iWidth = 400;
+	}
+    image.src=ImgD.src; 
+    if(image.width>0 && image.height>0){ 
+        flag=true; 
+      if(image.width>=iWidth){ 
+        ImgD.width=iWidth;
+        ImgD.height=(image.height*iWidth)/image.width; 
+
+        }else{ 
+            ImgD.width=image.width; 
+            ImgD.height=image.height; 
+        }  
+    } 
+} 
+//鼠标滚轮函数
+//使用：<img src="images/a.jpg" onmousewheel="return cgimg(this);" />
+function cgimg(o){
+var zoom=parseInt(o.style.zoom, 10)||100;zoom+=event.wheelDelta/12;if (zoom>0) o.style.zoom=zoom+'%';
+return false;
+}
+-->
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<!--header start--->
+    {include file="header.html"/}
+    <!--header end--->
+    
+    <!--main start--->
+    <div id="main">
+    	<div class="container">
+        
+        		<!--notice--->
+        		<div class="location">
+       	  你现在的位置：{sys:sitepath /}</div>
+                
+				<div class="column_side">
+                
+                        <!--栏目-->
+                        <div class="box">
+                          <div class="title"><span class="titletxt">图片栏目</span></div>
+                            <div class="content">
+                                <ul>
+                                    {list:col mode="sql" sql="SELECT ID,Name FROM PicColumn WHERE ParentID = 0"}
+                                     <li> <a href="[col:url]" >[col:name]</a> </li>
+                                    {/list:col}
+                                </ul>
+                            </div>
+                        </div>
+                        
+                </div>
+                <div class="column_main">
+                		<div class="article">
+                        		<h1 class="arttitle">{pic:title /}</h1>
+                                <div class="artinfo">
+                                 作者：{pic:author /}   来源：{pic:Source /} 点击次数：{pic:hits /}　时间：{pic:createtime/} 
+                    			</div>
+                                <div class="content" id="content"  style="text-align:center">
+                      
+										<img src="{pic:PicPath /}" width="600" onload="javascript:DrawImage(this);" onmousewheel="return cgimg(this);"/><br />
+										{pic:Intro/}
+                          		</div>
+                                <div class="preNext" style="text-align:center; margin-top:20px; margin-bottom:20px;">
+                                   上一张：{pic:pre /} 
+                                   <span style=" padding-left:20px; padding-right:40px;">&nbsp;</span> 
+                                   下一张：{pic:next /}
+                                </div>
+                        </div>
+               </div>
+               <div class="clear"></div>
+        </div>
+    </div>
+    <!--main end--->
+    
+    <!--footer start--->
+	{include file="footer.html" /}
+    <!--footer end--->
+</div>
+</body>
+</html>
+<!--- 制作：刘付灵  E-mail:Foolin@126.com --->
