@@ -5,7 +5,7 @@
 'Purpose：		后台管理首页
 'Auhtor: 		Foolin
 'Create on:		2009-8-31 19:11:54
-'Copyright:		E酷工作室(www.eekku.com)
+'Copyright:		卓新网络(www.JoySyn.com)
 '===========================================
 Call ChkLogin()
 
@@ -24,7 +24,7 @@ If WaitTime = 0 Then Response.Redirect(Url)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>URL跳转-Powered by eekku.com</title>
+<title>URL跳转-Powered by JoySyn.com</title>
 <link href="images/common.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--

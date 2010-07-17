@@ -5,7 +5,7 @@
 'Purpose：		管理帮助文档
 'Auhtor: 		Foolin
 'Create on:		2009-9-19 17:39:51
-'Copyright:		E酷工作室(www.eekku.com)
+'Copyright:		卓新网络(www.JoySyn.com)
 '===========================================
 Call ChkLogin()
 Dim act: act = Request("action")
@@ -14,7 +14,7 @@ Dim act: act = Request("action")
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>标签代码参考-用户帮助 - Powered by eekku.com</title>
+<title>标签代码参考-用户帮助 - Powered by JoySyn.com</title>
 <link href="images/common.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
@@ -247,14 +247,14 @@ function HightLightTag(id){
 </div></li>
 <li>制作模板完成之后，进入【管理后台】 → 【<a href="admin_config.asp">系统配置</a>】 → 选择【<a href="admin_config.asp">模板</a>】，选中你制作模板的目录，点击保存即可。如果你网站不能及时刷新，点击【<a href="index.asp?action=clearcache">更新缓存</a>】，然后刷新即可完成。</li>
 <li>	制作过程可以参照系统自带的模板和本标签说明即可。</li>
-<li>	若有任何疑问或者bug,请到官方http://www.eekku.com或者发送邮件到Foolin@126.com进行反馈。</li>
+<li>	若有任何疑问或者bug,请到官方http://www.JoySyn.com或者发送邮件到Foolin@126.com进行反馈。</li>
 </ol>
 
 <br />
 注意：制作模板必须具备一定的HTML和CSS知识。网页默认是Gb2312编码。
 <br /><br />
 
-官方：<a href="http://www.eekku.com" target="_blank">http://www.eekku.com</a><br />
+官方：<a href="http://www.JoySyn.com" target="_blank">http://www.JoySyn.com</a><br />
 主页：<a href="http://www.liufu.org/ling" target="_blank">http://www.liufu.org/ling</a><br />
 邮箱：Foolin@126.com<br />
 <br />

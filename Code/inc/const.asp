@@ -32,16 +32,16 @@ Dim SITEPATHSPLIT	'路径分隔符
 
 	
 Dim STUDIONAME	'官方
-	STUDIONAME = "Eekku Studio"	
+	STUDIONAME = "卓新网络(JoySyn.com)"	
 	
 Dim STUDIOURL	'官方Url
-	STUDIOURL = "http://www.eekku.com"
+	STUDIOURL = "http://www.JoySyn.com"
 	
 Dim STUDIO
 	STUDIO = "<a href=""" & STUDIOURL & """ target=""_blank"">" & STUDIONAME & "</a>"
 	
 Dim SYSNAME	'系统名称
-	SYSNAME = "EekkuCMS"
+	SYSNAME = "JSCMS"
 
 Dim SYSVERSION	'系统版本
 	SYSVERSION = " V1.0.5 build091026"

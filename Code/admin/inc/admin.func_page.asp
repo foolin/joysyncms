@@ -1,6 +1,6 @@
 <%Sub Header%>
     <div id="header">
-         <img src="images/logo.gif" height="35"  border="0"/> <span style="font-size:30px; font-weight:bold;"><%=SiteName%></span> <span style="font-size:18px; color:#099;">欢迎使用E酷CMS，一个小型站点的内容管理系统~</span>
+         <img src="images/logo.gif" height="35"  border="0"/> <span style="font-size:30px; font-weight:bold;"><%=SiteName%></span> <span style="font-size:18px; color:#099;">欢迎使用卓新内容管理系统（JSCMS），一个小型站点的内容管理系统~</span>
     </div>
 <%End Sub%>
 
@@ -41,7 +41,7 @@
 
 <%Sub Footer()%>
     <div id="footer">
-    	<a href="../index.asp" target="_blank">网站首页</a> | <a href="index.asp?action=clearcache">更新缓存</a>  | <a href="help.asp">用户帮助</a>  | <a href="http://www.eekku.com" target="_blank">最新版本</a><br />
+    	<a href="../index.asp" target="_blank">网站首页</a> | <a href="index.asp?action=clearcache">更新缓存</a>  | <a href="help.asp">用户帮助</a>  | <a href="http://www.JoySyn.com" target="_blank">最新版本</a><br />
        <%=GetLogin("AdminNickname")%>，欢迎您进入[<%=sitename%>]后台管理。　<br />
      &copy; 2009 <%=studio%> All rights reserved。Powered by <%=syslink%><br />
     </div>
@@ -62,6 +62,6 @@
             <dt>--== 网站信息 ==--</dt>
             <dd>网站:<a href="<%=siteurl%>" target="_blank"><%=sitename%></a></dd>
             <dd>网址:<a href="<%=siteurl%>" target="_blank"><%=siteurl%></a></dd>
-            <dd>内核:<a href="http://www.eekku.com"><%=syslink%></a></dd>
+            <dd>内核:<a href="http://www.JoySyn.com"><%=syslink%></a></dd>
         </dl>
 <%End Sub%>

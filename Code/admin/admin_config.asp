@@ -162,7 +162,7 @@ End Function
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title><%=SITENAME%>后台管理 - 配置管理 - Powered by eekku.com</title>
+<title><%=SITENAME%>后台管理 - 配置管理 - Powered by JoySyn.com</title>
 <link href="images/common.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
@@ -237,13 +237,13 @@ input{ background:#FFFFFF; padding:3px; border:#C4E1FF 1px solid;}
                             <tr>
                                 <td align="right" width="100">网站名称：</td>
                                 <td>
-                                	<input type="text" name="SiteName" value="<%=SITENAME%>" style="width:250px;"/> <br /> <span class="gray">例如:E酷网</span>
+                                	<input type="text" name="SiteName" value="<%=SITENAME%>" style="width:250px;"/> <br /> <span class="gray">例如:卓新网络</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td align="right" width="100">网站域名：</td>
                                 <td>
-                                    <input type="text" name="HttpUrl" value="<%=HTTPURL%>" style="width:250px;"/> <br /> <span class="gray">例如：http://www.eekku.com（不能加目录）。</span>
+                                    <input type="text" name="HttpUrl" value="<%=HTTPURL%>" style="width:250px;"/> <br /> <span class="gray">例如：http://www.JoySyn.com（不能加目录）。</span>
                                     <%If LCase(HTTPURL) <> LCase("http://"&Request.ServerVariables("Http_Host")) Then%>
                                         <span class="blue">检测到域名为：http://<%=Request.ServerVariables("Http_Host")%></span>
                                     <%End If%>

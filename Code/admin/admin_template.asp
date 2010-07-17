@@ -11,7 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title><%=SITENAME%>后台管理 - 配置管理 - Powered by eekku.com</title>
+<title><%=SITENAME%>后台管理 - 配置管理 - Powered by JoySyn.com</title>
 <link href="images/common.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
@@ -141,7 +141,7 @@ Fileurl =  replace(request("file"),"//","/")
 	%>
 </table>
 
-					<div style="color:green; padding:10px;">温馨提示：如果要选择模板，请到【<a href="admin_config.asp">系统配置 → 模板目录 </a>】进行设置！【<a href="http://www.eekku.com" target="_blank">获取更多模板>></a>】</div>
+					<div style="color:green; padding:10px;">温馨提示：如果要选择模板，请到【<a href="admin_config.asp">系统配置 → 模板目录 </a>】进行设置！【<a href="http://www.JoySyn.com" target="_blank">获取更多模板>></a>】</div>
                </div>
             </td>
         </tr>

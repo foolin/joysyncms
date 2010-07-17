@@ -552,7 +552,7 @@ Function CreateTable(strDbName, strUsername, strPassword)
 	'创建管理员初始密码
 	Conn.execute("INSERT INTO [Admin] ([Username],[Nickname],[Password],[Level],[LoginCount],[LoginTime],[LoginIP]) VALUES('"& strUsername &"','"& strUsername &"','"& strPassword &"',3,0,'"& Now() &"','"& GetIP() &"')")
 	'创建初始化自定义标签
-	Conn.execute("INSERT INTO [MyTags] ([Name],[Info],[Code]) VALUES('FirstTag','第一个自定义标签','第一个自定义标签：(零星碎事)<br /><br /><a href=""http://www.joysyn.com""> -==- 卓新网络 -==- </a><br /><a href=""http://ling.liufu.org""> -==- 作者主页 -==- </a> <br /><a href=""http://http://code.google.com/p/foolincms/""> -==- 最新版本 -==- </a><br />')")
+	Conn.execute("INSERT INTO [MyTags] ([Name],[Info],[Code]) VALUES('FirstTag','第一个自定义标签','第一个自定义标签：(零星碎事)<br /><br /><a href=""http://www.joysyn.com""> -==- 卓新网络 -==- </a><br /><a href=""http://ling.liufu.org""> -==- 作者主页 -==- </a> <br /><a href=""http://http://code.google.com/p/joysyncms/""> -==- 最新版本 -==- </a><br />')")
 	'自定义标签：公告
 	Conn.execute("INSERT INTO [MyTags] ([Name],[Info],[Code]) VALUES('notice','公告','公告：您已经成功安装卓新内容管理系统（JSCMS），欢迎使用！')")
 	'自定义标签：系统信息
@@ -564,7 +564,7 @@ Function CreateTable(strDbName, strUsername, strPassword)
 	'友情链接
 	Conn.execute("INSERT INTO [DiyPage] ([Title],[PageName],[Code],[State],[IsSystem]) VALUES('友情链接','links.html','{my:friendlinks /}',1,0)")
 	'下载页面
-	Conn.execute("INSERT INTO [DiyPage] ([Title],[PageName],[Code],[State],[IsSystem]) VALUES('作品下载','download.html','<p><strong>卓新内容管理系统（JSCMS）简介：</strong></p><p>卓新内容管理系统（JSCMS）（EekkuCMS）是一种小型站点内容管理系统，亦可做个人博客（主页）系统，内含文章、图片、留言、评论等基本功能，轻盈小巧，简便易用，是您建小型站点的明智选择！其功能有：</p><p><ol><li>本系统是采用 ASP + Access 技术实现，系统开源。</li><li>程序的功能有文章、相册、留言和评论等基本功能。</li><li>程序中模板和ASP代码将100%完全分离。</li><li>本系统自带系统标签，标签语法类似HTML标签语法，简洁易懂，此外，还有自定义标签功能，方便易用。</li><li>本系统有自定义页面功能。</li><li>系统用途任君选择，本系统可以作为小型文章管理系统，亦可作为个人博客，(*^__^*) ...</li><li>系统自带两种风格(CMS风格和BLOG风格，任君选择(*^__^*) )。</li><li>更多功能等待你来发现....</li></ol></p><p>最新版本下载：<a href=""http://www.liufu.org/ling/diypage.asp?url=download.html"" target=""_blank"">点击进入下载页面</a></p>',1,0)")
+	Conn.execute("INSERT INTO [DiyPage] ([Title],[PageName],[Code],[State],[IsSystem]) VALUES('作品下载','download.html','<p><strong>卓新内容管理系统（JSCMS）简介：</strong></p><p>卓新内容管理系统（JoySyn CMS，简称JSCMS）是一种小型站点内容管理系统，亦可做个人博客（主页）系统，内含文章、图片、留言、评论等基本功能，轻盈小巧，简便易用，是您建小型站点的明智选择！其功能有：</p><p><ol><li>本系统是采用 ASP + Access 技术实现，系统开源。</li><li>程序的功能有文章、相册、留言和评论等基本功能。</li><li>程序中模板和ASP代码将100%完全分离。</li><li>本系统自带系统标签，标签语法类似HTML标签语法，简洁易懂，此外，还有自定义标签功能，方便易用。</li><li>本系统有自定义页面功能。</li><li>系统用途任君选择，本系统可以作为小型文章管理系统，亦可作为个人博客，(*^__^*) ...</li><li>系统自带两种风格(CMS风格和BLOG风格，任君选择(*^__^*) )。</li><li>更多功能等待你来发现....</li></ol></p><p>最新版本下载：<a href=""http://www.liufu.org/ling/diypage.asp?url=download.html"" target=""_blank"">点击进入下载页面</a></p>',1,0)")
 	Conn.Close: Set Conn = Nothing
 	CreateTable = True
 End Function

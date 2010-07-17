@@ -14,7 +14,7 @@ If Err Then
 	Set Conn = Nothing
 	Response.Write("数据库连接出错，请检查您网站配置参数是否正确。<br /><br />")
 	Response.Write("提示：登录后台管理 → 系统配置 → 自动配置 → 完成。<br /><br />")
-	Response.Write("如果有任何疑问，请到官方进行反馈<a href='http://www.eekku.com'>http://www.eekku.com</a>。<br />")
+	Response.Write("如果有任何疑问，请到官方进行反馈<a href='http://www.JoySyn.com'>http://www.JoySyn.com</a>。<br />")
 	Response.End
 End If
 %>

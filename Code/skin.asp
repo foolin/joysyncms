@@ -3,7 +3,7 @@
 	serverUrl1 = Cstr(Request.ServerVariables("HTTP_REFERER"))
 	serverUrl2 = Cstr(Request.ServerVariables("SERVER_NAME"))
 	If Mid(serverUrl1, 8, Len(serverUrl2)) <>  serverUrl2 Then
-		Response.Write "你想干什么？<a href='http://www.eekku.com/'>E酷Cms</a>"
+		Response.Write "你想干什么？<a href='http://www.joysyn.com/'>JoySyn CMS</a>"
 	Else
 		strSkinPath = Replace(TemplatePath & "/" & Trim(Request("path")), "//", "/")
 		If Right(LCase(strSkinPath), 4) = ".css" Then	'显示Css中背景图片

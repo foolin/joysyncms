@@ -5,7 +5,7 @@
 'Purpose：		后台管理首页
 'Auhtor: 		Foolin
 'Create on:		2009-8-31 19:11:54
-'Copyright:		E酷工作室(www.eekku.com)
+'Copyright:		卓新网络(www.JoySyn.com)
 '===========================================
 Call ChkLogin()
 Dim Act: Act = Request("action")
@@ -27,7 +27,7 @@ End Function
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http=equiv="Content=Type" content="text/html; charset=gb2312" />
-<title><%=SiteName%>管理-首页-Powered by eekku.com</title>
+<title><%=SiteName%>管理-首页-Powered by JoySyn.com</title>
 <link href="images/common.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
@@ -180,6 +180,10 @@ End Function
                         <td class="td">&nbsp;<%=studio%></td>
                       </tr>
                      <tr height="18">
+                        <td align="left" class="td">&nbsp;官方网址：</td>
+                        <td class="td">&nbsp;<a href="<%=STUDIOURL%>" target="_blank"><%=STUDIOURL%></a></td>
+                      </tr>
+                     <tr height="18">
                         <td align="left" class="td">&nbsp;作者电子邮件：</td>
                         <td class="td">&nbsp; Foolin@126.com</td>
                       </tr>
@@ -189,7 +193,7 @@ End Function
                       </tr>
                      <tr height="18">
                         <td align="left" class="td">&nbsp;程序最新版本：</td>
-                        <td class="td">&nbsp;<a href="http://code.google.com/p/foolincms/" target="_blank">http://code.google.com/p/foolincms/</a></td>
+                        <td class="td">&nbsp;<a href="http://code.google.com/p/joysyncms/" target="_blank">http://code.google.com/p/foolincms/</a></td>
                       </tr>
                   </table>
                   
