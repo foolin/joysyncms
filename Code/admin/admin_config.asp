@@ -85,7 +85,7 @@
 	strTemp = strTemp & "' E-mail: 		Foolin@126.com" & Chr(10)
 	strTemp = strTemp & "' Created on: 	2009-9-9 10:27:17" & Chr(10)
 	strTemp = strTemp & "' Update on: 	" & Now() & Chr(10)
-	strTemp = strTemp & "' Copyright (c) 2009 E酷工作室（Foolin）All Rights Reserved" & Chr(10)
+	strTemp = strTemp & "' Copyright (c) 2010 卓新网络（JoySyn.com）All Rights Reserved" & Chr(10)
 	strTemp = strTemp & "'=========================================================" & keyEnter
 	' DBPATH变量
 	strTemp= strTemp & "Dim DBPATH" & keyTab & "'Access数据库路径" & Chr(10) & Chr(9) 

@@ -6,7 +6,7 @@
 ' E-mail: 		Foolin@126.com
 ' Createed on: 	2009-9-13 14:59:09
 ' Version:		v1.0.0 Build 20090913
-' CopyRight (c) 2009 E酷工作室（Foolin）All Rights Reserved
+' Copyright (c) 2010 卓新网络（JoySyn.com）All Rights Reserved
 '=========================================================
 
 '是否存在文件

@@ -7,7 +7,7 @@
 ' Createed on: 	2009-9-1 16:13:34
 ' Modify log:	
 ' Updated on: 	
-' CopyRight (c) 2009 E¿á¹¤×÷ÊÒ£¨Foolin£©All Rights Reserved
+' Copyright (c) 2010 ×¿ÐÂÍøÂç£¨JoySyn.com£©All Rights Reserved
 '=========================================================
 Class ClassArticle
 

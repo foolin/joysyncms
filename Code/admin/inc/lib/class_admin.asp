@@ -7,7 +7,7 @@
 ' Createed on: 	2009-8-28 16:31:33
 ' Modify log:	成员改为私有属性
 ' Updated on: 	2009-9-1 15:30:45
-' Copyright (c) 2009 E酷工作室（Foolin）All Rights Reserved
+' Copyright (c) 2010 卓新网络（JoySyn.com）All Rights Reserved
 '=========================================================
 Class ClassAdmin
 

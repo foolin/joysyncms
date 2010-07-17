@@ -9,28 +9,27 @@ Dim CHARSET: CHARSET = "GB2312"		'编码名称utf-8|gb2312
 ' Purpose：		系统配置文件
 ' Auhtor: 		Foolin
 ' E-mail: 		Foolin@126.com
-' Created on: 	2009-9-9 10:27:17
-' Update on: 	2009-10-21 23:24:44
-' Copyright (c) 2009 E酷工作室（Foolin）All Rights Reserved
+' Created on: 	2010-7-17 16:04:23
+' Copyright (c) 2010 卓新网络（Foolin）All Rights Reserved
 '=========================================================
 
 Dim DBPATH		'Access数据库路径
-	DBPATH = "database/Fl28#Ek_7348D432AF.mdb"
+	DBPATH = "database/Fl17#Ek_6C7A80B0FF.mdb"
 
 Dim SITENAME		'网站名称
-	SITENAME = "E酷科技网"
+	SITENAME = "卓新网络"
 
 Dim HTTPURL		'网站网址前缀
-	HTTPURL = "http://localhost"
+	HTTPURL = "http://127.0.0.1"
 
 Dim INSTALLDIR		'网站安装目录，根目录则为：/
-	INSTALLDIR = "/eekku"
+	INSTALLDIR = "/"
 
 Dim KEYWORDS		'网站关键词
-	KEYWORDS = "E酷网，E酷Cms，E酷工作室,www.eekku.com，零星碎事，ling.liufu.org___"
+	KEYWORDS = "卓新网络，卓新内容管理系统,JSCMS，卓新网络,www.joysyn.com，零星碎事，ling.liufu.org"
 
 Dim DESCRIPTION		'网站描述
-	DESCRIPTION = "E酷Cms(EekkuCMS)是一种小型站点内容管理系统，内含文章、图片、留言等基本功能，简单且方便使用!__"
+	DESCRIPTION = "卓新内容管理系统（JSCMS）是一种小型站点内容管理系统，内含文章、图片、留言等基本功能，简单且方便使用！"
 
 Dim TEMPLATEDIR		'网站模板路径，例如：default表示template/default/
 	TEMPLATEDIR = "default"
@@ -48,10 +47,10 @@ Dim GBOOKTIME		'允许留言最短时间间隔，单位秒，默认60秒
 	GBOOKTIME = 60
 
 Dim ISCACHE		'是否缓存，建议是，减轻服务器负载量
-	ISCACHE = 0
+	ISCACHE = 1
 
 Dim CACHEFLAG		'缓存标志，可以任意英文字母
-	CACHEFLAG = "Eekku_"
+	CACHEFLAG = "EekkuCms_"
 
 Dim CACHETIME		'缓存时间，默认是60分
 	CACHETIME = 60
@@ -60,9 +59,9 @@ Dim ISWEBLOG		'是否记录后台管理操作记录
 	ISWEBLOG = 1
 
 Dim LIMITIP		'限制IP，多用|进行分割
-	LIMITIP = "127.0.0.2|127.0.0.3"
+	LIMITIP = ""
 
-Dim DIRTYWORDS		'脏话过滤,多用|进行分割
+Dim DIRTYWORDS		'脏话过滤，多用|进行分割
 	DIRTYWORDS = "fuck|sex"
 
 %>

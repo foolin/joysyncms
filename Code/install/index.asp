@@ -611,7 +611,7 @@ Function CreateConfig(DbName)
 	strTemp = strTemp & "' Auhtor: 		Foolin" & Chr(10)
 	strTemp = strTemp & "' E-mail: 		Foolin@126.com" & Chr(10)
 	strTemp = strTemp & "' Created on: 	"& Now() & Chr(10)
-	strTemp = strTemp & "' Copyright (c) 2009 卓新网络（Foolin）All Rights Reserved" & Chr(10)
+	strTemp = strTemp & "' Copyright (c) 2010 卓新网络（Foolin）All Rights Reserved" & Chr(10)
 	strTemp = strTemp & "'=========================================================" & keyEnter
 	' DBPATH变量
 	strTemp= strTemp & "Dim DBPATH" & keyTab & "'Access数据库路径" & Chr(10) & Chr(9) 

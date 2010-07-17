@@ -5,7 +5,7 @@
  E-mail:		Foolin@126.com
  Create on:		2009-9-27
  Notice:    	本插件是系统自带插件。
- Copyright (c) 2009 E酷工作室（Foolin）All Rights Reserved。
+ Copyright (c) 2010 卓新网络（JoySyn.com）All Rights Reserved。
 ------------------------------------------------------------
 
 一、使用说明：

@@ -5,7 +5,7 @@
 'Purpose：		获取标签帮助文件
 'Auhtor: 		Foolin
 'Create on:		2009-9-30
-' Copyright (c) 2009 E酷工作室（Foolin）All Rights Reserved
+' Copyright (c) 2010 卓新网络（JoySyn.com）All Rights Reserved
 '===========================================
 Call ChkLogin()
 If Request("action") = "create" Then
