@@ -1,7 +1,7 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="936"%>
 <%
-'Option Explicit		'强制声明
-On Error Resume Next		'容错处理
+Option Explicit		'强制声明
+'On Error Resume Next		'容错处理
 Dim CODEPAGE: CODEPAGE = "936"		'页面编码65001|936
 Dim CHARSET: CHARSET = "GB2312"		'编码名称utf-8|gb2312
 '=========================================================
@@ -24,6 +24,9 @@ Dim HTTPURL		'网站网址前缀
 
 Dim INSTALLDIR		'网站安装目录，根目录则为：/
 	INSTALLDIR = "/"
+	
+Dim IsHtmlView		'默认为0-表示动态浏览，1-表示静态浏览
+	IsHtmlView = 0
 
 Dim KEYWORDS		'网站关键词
 	KEYWORDS = "卓新网络，卓新内容管理系统,JSCMS，卓新网络,www.joysyn.com，零星碎事，ling.liufu.org"
@@ -31,8 +34,8 @@ Dim KEYWORDS		'网站关键词
 Dim DESCRIPTION		'网站描述
 	DESCRIPTION = "卓新内容管理系统（JSCMS）是一种小型站点内容管理系统，内含文章、图片、留言等基本功能，简单且方便使用！"
 
-Dim TEMPLATEDIR		'网站模板路径，例如：default表示template/default/
-	TEMPLATEDIR = "default"
+Dim TEMPLATEDIR		'网站模板路径，例如：default/表示template/default/
+	TEMPLATEDIR = "default/"
 
 Dim ISHIDETEMPPATH		'是否隐藏模板路径，隐藏则会影响载入速度
 	ISHIDETEMPPATH = 0

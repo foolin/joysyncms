@@ -5,10 +5,11 @@
 ' Auhtor: 		Foolin
 ' E-mail: 		Foolin@126.com
 ' Createed on: 	2009-7-17 11:08:14
-' Updated on: 	2009-9-25 15:50:56
+' Updated on: 	2010-7-18 23:09:27
 ' Modify log:	
 '   1、自定义页面，增加URL参数入口，可以通过URL或者Id进行浏览自定义页面。(2009-9-25 15:50:56）
 '	2、列表{list}增加[mylist:url]属性，对文章、图片、栏目、DIY页面数据库表有效。（2009-10-11 13:01:08）
+'	3、增加mPageCount变量。（2010-7-18 23:10:06）
 '=========================================================
 
 Class ClassTemplate
@@ -18,6 +19,7 @@ Class ClassTemplate
 	Private mContent	'内容
 	Private mTemplate	'模板
 	Private mCurrPage	'当前页数
+	Private mPageCount 	'总页数	（2010-7-18 13:37:58）
 	
 	'设置当前页
 	Public Property Let Page(ByVal cPage) 
@@ -33,6 +35,12 @@ Class ClassTemplate
 		Content = mContent
 	End Property
 	
+
+	'取总页数
+	Public Property Get PageCount
+		PageCount = mPageCount
+	End Property
+	
 	
 	'初始化类
 	Private Sub Class_Initialize()
@@ -42,6 +50,7 @@ Class ClassTemplate
 		mContent = ""
 		mTemplate = "" ' 模板路径
 		mCurrPage = 1
+		mPageCount = 1
 	End Sub
 	
 	'释放类
@@ -79,7 +88,8 @@ Class ClassTemplate
 	' Notice:			
 	'--------------------------------------------------------------
 	Public Function LoadTpl(ByVal tplFile)
-		mTemplate = TemplatePath & "/" & tplFile
+		mTemplate = Replace(TemplatePath & "/" & tplFile, "//","/")
+		
 		If IsCache = 1 Then
 			If ChkCache("Template_" & Server.Mappath(mTemplate)) Then
 				mContent = GetCache("Template_" & Server.Mappath(mTemplate))
@@ -484,14 +494,15 @@ Class ClassTemplate
 				objRs.PageSize = tagRow * tagCol 
 				objRs.AbsolutePage = mCurrPage
 				objRs.List()
+				mPageCount = objRs.PageCount	'总页数，生成HTML列表用
 			Else
 				Set objRs = DB(tagSQL, 2)
 			End If
 			If Err Then Response.Write Warn("模板中{list}标签属性SQL出错[" & tagSQL & "] <br /><br />错误描述 : " & Err.Description): Response.End
 			'如果tagCol＞1则表格形式输出
 			If tagCol > 1 Then strTempValue = strTempValue & "<table width=""" & tagWidth & """ " & tagClass & ">" & vbCrLf
-
-			Session(CacheFlag & "List_i")  = 0
+			
+			Session(CacheFlag & "List_i")  = 0	'输出序号
 			If tagIsPage = True Then	'判断是否分页
 				Session(CacheFlag & "List_num") = objRs.Data.RecordCount 
 			Else

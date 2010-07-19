@@ -304,7 +304,7 @@ Sub List()
 		Next
 	%>
         <tr>
-        	<td colspan="9" style="padding:5px;">
+        	<td colspan="10" style="padding:5px;">
   				<input type="button" onClick="SelectAll(this.form,'GroupID')" value="全选" /> 
                 <input type="button" onClick="SelectOthers(this.form,'GroupID')" value="反选" /> 
                 &nbsp;&nbsp;

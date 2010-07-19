@@ -27,6 +27,8 @@
      <!--
      <li<%If act = "file" Then Echo(" class=""on""")%>><a href="#admin_uploadfile.asp">文件</a></li>
       -->
+      <li<%If act = "createhtml" Then Echo(" class=""on""")%>><a href="admin_createhtml.asp">生成</a></li>
+      
       <%If AdminLevel > 0 Then%>
 	 	<li<%If act = "weblog" Then Echo(" class=""on""")%>><a href="admin_weblog.asp">管理日志</a></li>
      <%End If%>
